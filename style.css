@@ -329,7 +329,6 @@ section {
   text-decoration: none;
 }
 
-
 /* footer  */
 
 footer {
@@ -416,12 +415,12 @@ footer a {
   margin-right: 10px;
 }
 
-.container h1{
+.container h1 {
   color: #ffffff;
   font-family: 'poppins', sans-serif;
 }
 
-.container h1:hover{
+.container h1:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -430,26 +429,3 @@ footer a {
   height: 20px;
   margin-top: 10px;
 }
-
-
-
-
-
-/* Existing CSS */
-
-/* Add responsive styles */
-@media (max-width: 768px) {
-  /* Hide the home-img section on smaller screens */
-  .home-img {
-    display: none;
-  }
-
-  /* Adjust the home-text section for better fit */
-  .home-text {
-    padding: 20px;
-    text-align: center;
-  }
-}
-
-
-
