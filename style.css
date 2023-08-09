@@ -99,7 +99,7 @@ section {
 }
 
 .home {
-  min-height: 100vh;
+  max-height: 100vh;
   width: 100%;
   background: #ffffff;
   background-position: center;
@@ -183,10 +183,12 @@ section {
   height: 90%;
 }
 
+/* events  */
 
 #events {
-  padding: 80px 0;
-  background-color: #f7f7f7;
+  padding: 80px 5%;
+  background-color: #ffffff;
+  margin-top: -50px;
 }
 
 .section-heading h2 {
@@ -226,7 +228,7 @@ section {
 }
 
 .events-item-carousel h4 {
-  font-size: 24px;
+  font-size: 20px;
   margin: 15px 0;
 }
 
@@ -264,6 +266,8 @@ section {
 }
 
 
+/* core team  */
+
 .section h2 {
   color: #2F8D46;
   font-size: 2rem;
@@ -281,6 +285,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .member-box {
@@ -320,11 +325,12 @@ section {
   color: #888888;
 }
 
-/* Remove underlines from member links */
 .member-link:hover {
   text-decoration: none;
 }
 
+
+/* footer  */
 
 footer {
   position: absolute;
@@ -352,6 +358,7 @@ footer {
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
+  margin: 0;
 }
 
 .footer-content p {
@@ -360,41 +367,7 @@ footer {
   line-height: 28px;
   font-size: 14px;
   color: #cacdd2;
-}
-
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 3rem 0;
-}
-
-.socials li {
-  margin: 0 10px;
-}
-
-.socials a {
-  text-decoration: none;
-  color: #fff;
-  border: 1.1px solid white;
-  padding: 5px;
-
-  border-radius: 50%;
-
-}
-
-.socials a i {
-  font-size: 1.1rem;
-  width: 20px;
-
-
-  transition: color .4s ease;
-
-}
-
-.socials a:hover i {
-  color: aqua;
+  margin: 0;
 }
 
 .sectio {
@@ -414,8 +387,69 @@ footer {
   cursor: pointer;
 }
 
-
 .sectio span {
   color: #000000;
   font-size: 30px;
 }
+
+
+footer {
+  position: relative;
+  background-color: #2F8D46;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer h3 {
+  font-size: 25px;
+
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.container h1{
+  color: #ffffff;
+  font-family: 'poppins', sans-serif;
+}
+
+.container h1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.copyright {
+  height: 20px;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* Existing CSS */
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  /* Hide the home-img section on smaller screens */
+  .home-img {
+    display: none;
+  }
+
+  /* Adjust the home-text section for better fit */
+  .home-text {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+
+

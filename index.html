@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <script src="https://kit.fontawesome.com/cd674d03e8.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -55,7 +54,7 @@
 
 
 
-  <!-- ***** Events Area Starts ***** -->
+  <!-- Events -->
   <section class="section" id="events">
     <div class="container">
       <div class="row">
@@ -75,7 +74,7 @@
                         <img src="imageGFGvitb/gfgposter1.png" alt="">
                       </div>
                       <div class="down-content">
-                        <h4>Webinar: The Future of E-Commerce</h4>
+                        <h4>Hackathon: Build the Next Big Thing</h4>
                         <span>March 8, 2023</span>
                         <a href="event-details.html" class="btn">Learn More</a>
                       </div>
@@ -85,7 +84,7 @@
                         <img src="imageGFGvitb/gfgposter2.png" alt="">
                       </div>
                       <div class="down-content">
-                        <h4>Hackathon: Build the Next Big Thing</h4>
+                        <h4>BroadCast: What's About Colleg Life?</h4>
                         <span>April 15, 2023</span>
                         <a href="event-details.html" class="btn">Learn More</a>
                       </div>
@@ -95,7 +94,7 @@
                         <img src="imageGFGvitb/gfgposter3.png" alt="">
                       </div>
                       <div class="down-content">
-                        <h4>Product Launch Party</h4>
+                        <h4>Webinar: What is GeeksforGeeks?</h4>
                         <span>May 22, 2023</span>
                         <a href="event-details.html" class="btn">Learn More</a>
                       </div>
@@ -105,7 +104,7 @@
                         <img src="imageGFGvitb/gfgposter3.png" alt="">
                       </div>
                       <div class="down-content">
-                        <h4>Product Launch Party</h4>
+                        <h4>Webinar: </h4>
                         <span>May 22, 2023</span>
                         <a href="event-details.html" class="btn">Learn More</a>
                       </div>
@@ -160,7 +159,7 @@
     </div>
 
   </section>
-  <!-- ***** Events Area Ends ***** -->
+
 
   <div class="sectio">
     <h2>Our Core Team</h2>
@@ -171,22 +170,22 @@
         <a href="#" target="_blank" class="member-link">
           <img src="imageGFGvitb/person1.jpg" alt="Member 1" class="member-image">
         </a>
-        <p class="member-name">John Doe</p>
-        <p class="member-info">UI/UX Designer</p>
+        <p class="member-name">Kierra Gentry</p>
+        <p class="member-info">Team leader</p>
       </div>
       <div class="member-box">
         <a href="#" target="_blank" class="member-link">
           <img src="imageGFGvitb/person2.jpg" alt="Member 1" class="member-image">
         </a>
-        <p class="member-name">John Doe</p>
-        <p class="member-info">UI/UX Designer</p>
+        <p class="member-name">Thomas Crane</p>
+        <p class="member-info">Web Developer</p>
       </div>
       <div class="member-box">
         <a href="#" target="_blank" class="member-link">
           <img src="imageGFGvitb/person3.jpg" alt="Member 1" class="member-image">
         </a>
-        <p class="member-name">John Doe</p>
-        <p class="member-info">UI/UX Designer</p>
+        <p class="member-name">Cierra Vega</p>
+        <p class="member-info">Techinal Manager</p>
       </div>
       <div class="member-box">
         <a href="#" target="_blank" class="member-link">
@@ -199,11 +198,76 @@
         <a href="#" target="_blank" class="member-link">
           <img src="imageGFGvitb/person5.jpg" alt="Member 1" class="member-image">
         </a>
-        <p class="member-name">John Doe</p>
-        <p class="member-info">UI/UX Designer</p>
+        <p class="member-name">Ellie Osborne</p>
+        <p class="member-info">Events Manager</p>
       </div>
 
     </div>
+
+
+    <!-- Footer -->
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="col-lg-4">
+        <h1>GeeksforGeeks</h1>
+    </div>
+      <h3 style="font-size: 25px;">Contact Us</h3>
+      <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+      <p>Email: GeeksforGeeksvitb@gmail.com<br>
+        Phone: xxx-xxx-xxxx</p>
+      
+      <div class="social-icons" style="margin-bottom: 10px;">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <hr align="center" width="50%" color="white">
+      <div class="copyright">
+        <p>&copy; 2023 GeeksforGeeks VIT Bhopal. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+// JavaScript for responsive and down-scroll navigation
+let prevScrollpos = window.pageYOffset;
+const navBar = document.querySelector("nav");
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+
+  // Determine the scrolling direction
+  if (prevScrollpos > currentScrollPos) {
+    navBar.style.top = "0";
+  } else {
+    navBar.style.top = "-100px";
+  }
+
+  // Update previous scroll position
+  prevScrollpos = currentScrollPos;
+};
+
+// Toggle responsive navigation menu
+const toggleBtn = document.querySelector(".toggle-btn");
+const navList = document.querySelector(".navlist");
+
+toggleBtn.addEventListener("click", () => {
+  navList.classList.toggle("active");
+});
+
+
+</script>
+
+
+
 
 </body>
 
