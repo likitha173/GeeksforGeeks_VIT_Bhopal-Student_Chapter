@@ -236,39 +236,6 @@
 </footer>
 
 
-<script>
-// JavaScript for responsive and down-scroll navigation
-let prevScrollpos = window.pageYOffset;
-const navBar = document.querySelector("nav");
-
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-
-  // Determine the scrolling direction
-  if (prevScrollpos > currentScrollPos) {
-    navBar.style.top = "0";
-  } else {
-    navBar.style.top = "-100px";
-  }
-
-  // Update previous scroll position
-  prevScrollpos = currentScrollPos;
-};
-
-// Toggle responsive navigation menu
-const toggleBtn = document.querySelector(".toggle-btn");
-const navList = document.querySelector(".navlist");
-
-toggleBtn.addEventListener("click", () => {
-  navList.classList.toggle("active");
-});
-
-
-</script>
-
-
-
-
 </body>
 
 </html>
